@@ -1,0 +1,18 @@
+<nav class="navbar">
+   <!-- Bouton hamburger -->
+  <div class="hamburger" (click)="toggleMenu()">
+    &#9776;
+  </div>
+  <div class="logo">{{ appName }}</div>
+
+  <!-- Menu navigation -->
+  <ul class="nav-links" [class.active]="menuOpen">
+    <li><a routerLink="/" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true }">Le concept</a></li>
+    <li><a routerLink="/qui-suis-je" routerLinkActive="active-link">Qui suis je ?</a></li>
+    <li><a routerLink="/contact" routerLinkActive="active-link">Contact</a></li>
+    <li><a routerLink="/prestations" routerLinkActive="active-link">Formules</a></li>
+    <li><a routerLink="/avis" routerLinkActive="active-link">Vos avis</a></li>
+    <li><a routerLink="/reservation" routerLinkActive="active-link">Questions fréquentes</a></li>
+  </ul>
+
+</nav>

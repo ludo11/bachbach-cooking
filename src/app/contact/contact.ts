@@ -1,13 +1,34 @@
 import { Component } from '@angular/core';
-import { EnCoursDeConstruction } from '../en-cours-de-construction/en-cours-de-construction';
+import { FormsModule } from '@angular/forms'; // 🔧 Import du FormsModule
 
 @Component({
   selector: 'app-contact',
-  imports: [EnCoursDeConstruction],
+  imports: [FormsModule],
   templateUrl: './contact.html',
   styleUrl: './contact.css',
   standalone: true, 
 })
 export class Contact {
+form = {
+    nom: '',
+    adresse: '',
+    telephone: '',
+    sujet: '',
+    message: ''
+  };
+
+  onSubmit() {
+    console.log('Formulaire envoyé :', this.form);
+    alert('Merci pour votre message, je vous répondrai sous 24h !');
+    this.form = {
+      nom: '',
+      adresse: '',
+      telephone: '',
+      sujet: '',
+      message: ''
+    };
+  }
 
 }
+
+  

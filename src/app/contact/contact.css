@@ -1,0 +1,241 @@
+/* Conteneur principal qui centre et gère la mise en page */
+.contact-wrapper {
+  display: flex;
+  gap: 0rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 2rem 1rem;
+  box-sizing: border-box;
+
+  max-width: 1100px; /* largeur max pour que ça ne s’étale pas trop */
+  margin: 0 auto;    /* centre horizontalement */
+}
+.page-center {
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* centre verticalement les enfants */
+  justify-content: center;
+  gap: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  box-sizing: border-box;
+}
+
+
+
+/* Styles communs aux deux conteneurs */
+.contact-container{
+  width: 100%;
+  max-width: 600px;
+  margin: 1rem auto;
+  padding: 1.5rem;
+  box-sizing: border-box;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+  font-family: Arial, sans-serif;
+  color: #333;
+  text-align: center;
+}
+
+/* Formulaire */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.contact-form label {
+  text-align: left;
+}
+
+/* Inputs et textarea */
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: #fdfdfd;
+  color: #333;
+  box-sizing: border-box;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #aaa;
+}
+
+/* Focus input */
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #388e3c;
+  box-shadow: 0 0 8px #388e3c;
+}
+
+/* Bouton */
+.contact-form button {
+  align-self: flex-start;
+  background-color: #388e3c;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.4rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #2e7d32;
+}
+
+/* Section contact info */
+.contact-info p {
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.contact-info ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.contact-info li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.1rem;
+  flex-wrap: wrap;
+}
+
+.contact-info a {
+  color: #388e3c;
+  text-decoration: none;
+  font-weight: 600;
+    /* Pour éviter que le lien déborde */
+  word-wrap: break-word;  /* Autorise le retour à la ligne dans un mot */
+  overflow-wrap: break-word;
+  white-space: normal; /* Permet le retour à la ligne */
+  max-width: 100%; /* Ne dépasse pas la largeur du conteneur */
+  display: inline-block;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+/* Icônes */
+.icon {
+  width: 24px;
+  height: 24px;
+  stroke: #388e3c;
+  flex-shrink: 0;
+}
+
+.intro-logo {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    margin-top: -20px;
+    img {
+    
+    height: auto;
+    }
+  }
+
+.intro-logo img {
+  max-width: 320px;
+  height: auto;
+}
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* ou start */
+  width: 100%;
+  max-width: 600px;
+  margin: 1rem auto;
+  padding: 1.5rem;
+  box-sizing: border-box;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+  font-family: Arial, sans-serif;
+  color: #333;
+  text-align: center;
+  max-height: 400px;
+  margin-top: 80px;
+}
+    
+/* Ajout de margin-top sur grand écran uniquement */
+@media (min-width: 768px) {
+  .contact-info {
+    margin-top: 170px;
+  }
+  .contact-wrapper{
+    gap: 7rem;
+  }
+    .page-center {
+    flex-direction: row;
+    gap: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  .contact-container,
+  .contact-info {
+    flex: 1;
+    max-width: none;
+    
+  }
+}
+
+/* Ajustements pour mobile si nécessaire */
+@media (max-width: 768px) {
+  .contact-wrapper {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 0px;
+    
+  }
+
+  .contact-container
+   {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+/* Responsive pour petits écrans */
+@media (max-width: 480px) {
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 0.9rem;
+  }
+
+  .contact-info ul {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .contact-info li {
+    justify-content: center;
+  }
+
+  .contact-form button {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1.1rem;
+  }
+   .contact-info .icon {
+    width: 18px;
+    height: 18px;
+  }
+}

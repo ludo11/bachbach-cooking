@@ -1,4 +1,12 @@
+
+
 <div class="contact-wrapper">
+     <custom-alert
+  [visible]="alertVisible"
+  [title]="alertTitle"
+  [message]="alertMessage"
+  [closeHandler]="closeAlert.bind(this)">
+</custom-alert>
   <div class="contact-info">
      <div class="intro-logo">
       <img src="assets/images/logo.png" alt="Logo" />
@@ -26,7 +34,7 @@
   <!-- Bloc formulaire -->
   <div class="contact-container">
      <!-- Bloc infos -->
- 
+
 
     <h2>Formulaire de contact :</h2>
     <p>Pour toutes demandes d’informations vous pouvez le faire ici, je réponds sous 24 h.</p>

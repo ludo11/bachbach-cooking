@@ -86,6 +86,8 @@ li a {
       background: linear-gradient(135deg, #c9e3cd 0%, #e5f3e7 50%, #c9e3cd 100%);
       padding: 1rem;
       margin-top: 1rem;
+      overflow: hidden;
+      transition: opacity 0.3s ease, max-height 0.3s ease;
     }
 
     .nav-links.active {

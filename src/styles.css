@@ -10,7 +10,7 @@ html, body {
 /* Corps avec image de fond */
 body {
   /*background-image: url('assets/images/hero-cooking1.jpeg');*/
-  background: linear-gradient(to bottom right, #1e6844, #2d2d2d);
+  background: linear-gradient(135deg, #c9e3cd, #e5f3e7);
   color: #ffffff;
   /* background-size: cover;
   background-position: center;

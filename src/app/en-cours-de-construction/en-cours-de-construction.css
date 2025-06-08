@@ -1,10 +1,11 @@
 .construction-wrapper {
-  min-height: calc(100vh - 80px);
+  min-height: calc(100vh - 111px - 100px); 
   display: flex;
   justify-content: center;
   align-items: center;
   background: linear-gradient(135deg, #c9e3cd, #e5f3e7);
   padding: 2rem;
+  overflow: hidden; 
 
   .construction-content {
     text-align: center;

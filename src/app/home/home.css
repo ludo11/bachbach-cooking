@@ -10,7 +10,7 @@
   flex-wrap: wrap;
   /* align-items: center;
   justify-content: center; */
-background: linear-gradient(135deg, #e6f0ea, #ffffff);
+  background: linear-gradient(135deg, #e6f0ea, #ffffff);
   color: #2d2d2d;
   gap: 2rem;
   
@@ -132,7 +132,6 @@ background: linear-gradient(135deg, #e6f0ea, #ffffff);
   .intro-container {
     flex-direction: column;
     text-align: center;
-    margin-top: 10%;
     .intro-logo,
     .intro-photo {
       img {

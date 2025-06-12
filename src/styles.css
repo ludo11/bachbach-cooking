@@ -4,39 +4,56 @@ html, body {
   padding: 0;
   height: 100%;
   width: 100%;
-  overflow-x: hidden;
 }
 
 /* Corps avec image de fond */
 body {
-  /*background-image: url('assets/images/hero-cooking1.jpeg');*/
   background: linear-gradient(135deg, #c9e3cd, #e5f3e7);
   color: #ffffff;
-  /* background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat; */
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
 
-
-.home {
-  flex: 1;
+/* Enveloppe principale */
+.page-wrapper {
   display: flex;
   flex-direction: column;
-  margin-top: 3%;
+  height: 100vh;
+  overflow: hidden;
 }
 
+/* Header fixe */
+app-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  background: linear-gradient(135deg, #c9e3cd, #e5f3e7);
+  box-sizing: border-box;
+}
+
+/* Footer fixe */
 app-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
   text-align: center;
   background: linear-gradient(135deg, #c9e3cd 0%, #e5f3e7 50%, #c9e3cd 100%);
   color: #1e6844;
   padding: 1rem;
   box-sizing: border-box;
+  z-index: 10;
 }
-.page-wrapper {
+
+/* Contenu principal scrollable */
+main.home {
+  flex: 1;
+  margin-top: 60px;     /* Ajuste selon la hauteur réelle du header */
+  margin-bottom: 60px;  /* Ajuste selon la hauteur réelle du footer */
+  overflow-y: auto;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
 }

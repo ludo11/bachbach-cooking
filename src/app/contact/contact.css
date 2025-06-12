@@ -173,7 +173,7 @@
   color: #333;
   text-align: center;
   max-height: 400px;
-  margin-top: 80px;
+  margin-top: 40px;
 }
     
 /* Ajout de margin-top sur grand écran uniquement */
@@ -190,11 +190,15 @@
     max-width: 900px;
     margin: 0 auto;
   }
-  .contact-container,
   .contact-info {
     flex: 1;
     max-width: none;
     
+  }
+  .contact-container {
+    margin-top: 40px;
+     flex: 1;
+    max-width: none;
   }
 }
 

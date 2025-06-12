@@ -1,11 +1,9 @@
-.page-wrapper {
-  height: 100vh;
+.page-wrapper-presta {
   display: flex;
-  justify-content: center;
   align-items: center;
-  padding: 1rem;
+  padding: 2rem;
   box-sizing: border-box;
-  width: 100%;
+  min-height: 100vh; 
 }
 
 .cards-container {
@@ -13,67 +11,105 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 6rem;
+  gap: 4rem;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  min-height: 100vh; 
 }
 
 .card {
-  background-color: #1e1e1e;
-  color: #fff;
+  color: #1e1e1e;
+  background-color: #fff;
   border-radius: 1rem;
   overflow: hidden;
-  width: 400px;
+  width: 600px;
+  height: 500px; /* ✅ fixe une hauteur identique */
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
   transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* assure que le footer est en bas */
+
 }
 
 .card:hover {
   transform: translateY(-5px);
 }
+.card h2{
+  margin-top: 2%;
+  margin-bottom: 0%;
+  color: #1e6844 !important;
 
+}
+.card p{
+  margin: 0%;
+  font-size: 1.2rem;
+  color: #1e6844 !important;
+
+}
 .card img {
   width: 100%;
-  height: 200px;
-  object-fit: cover;
+  height: 300px;
+  /* object-fit: cover; */
 }
 
 .card-content {
   padding: 1rem;
+  flex: 1;
+  overflow-y: auto; /* ✅ scroll si le contenu dépasse */
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 0.5rem;
+  overflow: hidden; /* évite les débordements */
+
+}
+.card-content h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #1e6844;
+  flex-shrink: 0; /* ne se réduit jamais */
 }
 
+.card-description-scrollable {
+  flex: 1;
+  overflow-y: auto;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  padding-right: 0.5rem; /* optionnel, améliore scroll */
+}
 .card-footer {
+  margin-top: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-top: 1px solid #ccc;
+  padding: 1rem;
 }
 
 .price {
-  font-size: 1.1rem;
-  color: #ff7e29;
-  font-weight: bold;
+  font-size: 1.3rem;
+        font-weight: bold;
+        color: #1e6844;
 }
 
-.reserve-button {
-  background-color: #ff7e29;
-  color: white;
-  border: none;
-  padding: 0.5rem 1rem;
-  border-radius: 8px;
-  font-weight: 600;
-  transition: background-color 0.2s ease;
-  cursor: pointer;
-}
+  .reservation-link {
+        display: inline-block;
+        margin-top: 1rem;
+        padding: 0.8rem 1.6rem;
+        background-color: #1e6844;
+        color: #ffffff;
+        text-decoration: none;
+        border-radius: 8px;
+        font-weight: bold;
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease;
 
-.reserve-button:hover {
-  background-color: #e66a12;
-}
-
-/* Par défaut (desktop) */
-.card {
-  width: 400px;
-}
+        &:hover {
+          background-color: #145135;
+          transform: translateY(-2px);
+          box-shadow: 0 10px 24px rgba(0, 0, 0, 0.15);
+        }
+      }
 
 /* Tablettes */
 @media (max-width: 900px) {
@@ -88,16 +124,23 @@
 
 /* Mobiles */
     @media (max-width: 600px) {
-    .card {
-        width: 90%; /* pour qu'elle prenne presque toute la largeur */
-    }
-
+     .card {
+    width: 90%;
+    height: 600px; /* même hauteur pour toutes */
+  }
     .cards-container {
         gap: 1.5rem;
     }
 
-    .page-wrapper {
-    padding-top: 63rem; 
-    padding-bottom: 65rem;
-  }
+  .page-wrapper-presta {
+    margin-bottom: 2rem;
+    padding: 0%;
+  }        
+
+  .price {
+       margin-top: 1rem;
+    }
+}
+.underline{
+    text-decoration: underline;
 }

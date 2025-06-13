@@ -8,7 +8,8 @@
   <!-- Menu navigation -->
   <ul class="nav-links" [class.active]="menuOpen">
     <li><a routerLink="/" (click)="closeMenu()" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true }">Le concept</a></li>
-    <li><a routerLink="/qui-suis-je" (click)="closeMenu()" routerLinkActive="active-link">Qui suis je ?</a></li>
+    <!-- <li><a routerLink="/qui-suis-je" (click)="closeMenu()" routerLinkActive="active-link">Qui suis je ?</a></li> -->
+    <li><a routerLink="/app-mes-plats" (click)="closeMenu()" routerLinkActive="active-link">Les plats</a></li>
     <li><a routerLink="/contact" (click)="closeMenu()" routerLinkActive="active-link">Contact</a></li>
     <li><a routerLink="/prestations" (click)="closeMenu()" routerLinkActive="active-link">Formules</a></li>
     <li><a routerLink="/avis" (click)="closeMenu()" routerLinkActive="active-link">Vos avis</a></li>

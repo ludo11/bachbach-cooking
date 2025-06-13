@@ -1,0 +1,104 @@
+ .plats-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin: 3rem;
+  }
+
+  .plats-section {
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+    padding: 1.5rem;
+    color: #333;
+    text-align: center;
+  }
+
+  .plats-section h2 {
+    margin-bottom: 1rem;
+    color: #388e3c;
+    font-weight: 700;
+    font-size: 1.5rem;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  thead {
+    background-color: #388e3c;
+    color: white;
+    width: 100%;
+    table-layout: fixed;
+  }
+
+  thead th {
+    padding: 0.6rem;
+    text-align: left;
+    border-radius: 8px 8px 0 0;
+  }
+
+  tbody {
+    display: block;
+    max-height: 320px; /* hauteur ~ 10 lignes */
+    overflow-y: auto;
+    width: 100%;
+  }
+
+  tbody tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+  }
+
+  tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+  }
+
+  tbody td {
+    padding: 0.6rem;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+  }
+
+  .chek{
+    margin: 3rem;
+    background-color: #f9f9f9;
+    padding: 1rem;
+    color: #388e3c;
+    border-radius: 8px;
+  }
+  /* Responsive */
+  @media (max-width: 1200px) {
+    .plats-wrapper {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  @media (max-width: 900px) {
+    .plats-wrapper {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 600px) {
+    .plats-wrapper {
+      grid-template-columns: 1fr;
+      margin: 1rem;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+
+    }
+    tbody td, thead th {
+      font-size: 0.9rem;
+    }
+    .plats-section {
+    padding: 0.5rem;
+  }
+.chek{
+    margin: 1rem;
+    padding: 1rem;
+    margin-top: 2rem;
+  }
+  }

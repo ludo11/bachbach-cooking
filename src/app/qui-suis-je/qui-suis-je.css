@@ -1,0 +1,77 @@
+.qui-suis-je-wrapper {
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.qui-suis-je-section {
+  max-width: 900px;
+  background: #ffffff; /* blanc neutre */
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.qui-suis-je-section h2 {
+  font-size: 2rem;
+  color: #1e6844; /* accent vert */
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.accent-line {
+  width: 60px;
+  height: 4px;
+  background-color: #1e6844; /* accent vert */
+  margin: 0 auto 1.5rem auto;
+  border-radius: 2px;
+}
+
+.qui-suis-je-content p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  color: #2d2d2d;
+}
+
+.qui-suis-je-content ul {
+  margin: 1rem 0;
+  padding-left: 1.2rem;
+  /* list-style-type: disc; */
+}
+
+.qui-suis-je-content ul li {
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: #000;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .qui-suis-je-section {
+    padding: 1.8rem;
+  }
+
+  .qui-suis-je-section h2 {
+    font-size: 1.8rem;
+  }
+
+  .qui-suis-je-content p {
+    font-size: 1.05rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .qui-suis-je-section {
+    padding: 1.5rem;
+  }
+
+  .qui-suis-je-section h2 {
+    font-size: 1.6rem;
+  }
+
+  .qui-suis-je-content p {
+    font-size: 1rem;
+  }
+}

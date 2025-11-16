@@ -1,50 +1,119 @@
 
-<!-- <section class="hero">
-  <div class="hero-left">
+<section class="services-intro">
+
+   <div class="logo-header">
     <img src="assets/images/logo.png" alt="Logo" class="logo" />
   </div>
-  <div class="hero-text">
-    <h1>La cuisine a domicile simplifiée</h1>
-    <p>Je cuisine chez vous pour toute la semaine.</p>
-    <a routerLink="/reservation" routerLinkActive="active-link" class="cta-button">Réserver un atelier</a>
-  </div>
-  <div class="hero-right">
-    <img src="assets/images/melCuisine.JPG" alt="Atelier culinaire" class="hero-image" />
-  </div>
-</section> -->
-<div class="intro-container">
-  <!-- Bloc gauche : Logo -->
-  <div class="intro-logo">
-    <img src="assets/images/logo.png" alt="Logo" />
-  </div>
 
-  <!-- Bloc centre : Texte et bulles -->
-  <div class="intro-content">
-    <div class="content-info">
-      <h1>La cuisine à domicile simplifiée</h1>
-      <h2>Je cuisine chez vous pour toute la semaine</h2>
+  <h1>Ici, vous trouverez plusieurs formules et services pour vous accompagner au mieux dans vos repas.</h1>
 
-      <div class="bubbles">
-        <div class="bubble">Gagnez du temps</div>
-        <div class="bubble">Libérez votre esprit</div>
-        <div class="bubble">Mangez varié et fait maison</div>
-      </div>
+  <p class="intro-text">
+    Je vous propose :
+  </p>
 
-      <div class="description">
-        <p>Et si tous vos repas de la semaine étaient prêts dans votre frigo sans passer par la case cuisine ?!</p>
-        <p>Je cuisine chez vous 4 ou 5 plats faits maison pour toute la famille et vous n’avez qu’à réchauffer.</p>
-        <p>Un service de batchcooking pensé pour soulager les mamans actives qui veulent bien manger sans perdre de temps.</p>
-        <p class="availability">➤ Disponible dans tout le <strong>31</strong><br />
-          <small>Me contacter via le formulaire ou Instagram pour les départements limitrophes</small>
-        </p>
-        <p class="price">Vos plats de la semaine à partir de <strong>60 €</strong></p>
-        <a class="reservation-link" href="https://la-cuisine-des-debordes.reservio.com/" target="_blank" rel="noopener noreferrer">Réserve un créneau</a>
-      </div>
+  <ul class="service-list">
+    <li><strong>De cuisiner pour vous et votre famille pour toute la semaine</strong></li>
+    <li><strong>De préparer vos boîtes repas individuelles</strong> pour vos déjeuners au travail</li>
+    <li><strong>De réaliser vos cocktails apéritifs ou dînatoires</strong></li>
+  </ul>
+
+  <p class="simple-service">Un service simple, pensé pour <strong>faciliter votre quotidien</strong>.</p>
+
+  <hr />
+
+  <!-- Batchcooking -->
+  <section class="category">
+    <h2>🥘 Comment ça marche ?</h2>
+    <h3>⭐ Formules de Batchcooking</h3>
+
+    <div class="step">
+      <h4>1 — Prenez votre rendez-vous en ligne</h4>
+      <p>
+        Choisissez votre créneau <a href="https://la-cuisine-des-debordes.reservio.com/" target="_blank" class="link">ici</a>.
+        Votre présence n’est <strong>pas obligatoire</strong> pendant la session cuisine.
+      </p>
     </div>
-  </div>
 
-  <!-- Bloc droite : Photo -->
-  <div class="intro-photo">
-    <img src="assets/images/melCuisine.JPG" alt="Photo de cuisine" />
-  </div>
-</div>
+    <div class="step">
+      <h4>2 — Choisissez vos plats préférés</h4>
+      <p>
+        Je vous propose une liste d’environ <strong>100 plats</strong>, régulièrement enrichie.  
+        Je cuisine sur une base de <strong>4 personnes</strong> (modulable).  
+        Vous sélectionnez <strong>4 ou 5 plats</strong> selon la formule choisie.
+      </p>
+    </div>
+
+    <div class="step">
+      <h4>3 — Recevez votre liste de courses</h4>
+      <p>
+        Je vous envoie une <strong>liste de courses détaillée</strong>, classée par catégories.
+      </p>
+    </div>
+
+    <div class="step">
+      <h4>4 — Je viens cuisiner chez vous</h4>
+      <p>
+        Le jour du rendez-vous, je prépare les plats choisis et les conditionne dans vos contenants  
+        (ou les miens si nécessaire).  
+        Aucun matériel spécifique n’est requis.
+      </p>
+    </div>
+
+    <div class="step">
+      <h4>5 — Profitez de vos repas toute la semaine</h4>
+      <p>
+        Vos plats sont prêts : il suffit de les réchauffer.  
+        Ils se conservent au <strong>réfrigérateur ou au congélateur</strong>.  
+        Avant de partir, je nettoie votre cuisine pour ne laisser <strong>aucune trace</strong>.
+      </p>
+    </div>
+
+    <p class="extra-info">
+      Je propose aussi des <strong>repas de groupe</strong> et des <strong>cocktails apéritifs ou dînatoires</strong>.  
+      Retrouvez la carte ici : <a routerLink="/app-mes-plats"  class="link">voir la carte</a>.
+    </p>
+  </section>
+
+  <hr />
+
+  <!-- Boîtes repas -->
+  <section class="category">
+    <h3>🍱 Formules de Boîtes Repas</h3>
+
+    <ul class="steps-list">
+      <li>6 plats au choix pour 1 personne (menu renouvelé chaque semaine)</li>
+      <li>Vous en sélectionnez 4</li>
+      <li>Je vous envoie la liste de courses</li>
+      <li>
+        Je cuisine vos repas le jour du rendez-vous et les conditionne dans des
+        <strong>boîtes réutilisables offertes</strong> pour la première commande
+      </li>
+      <li>Vos repas du midi sont prêts à être emportés au travail</li>
+    </ul>
+  </section>
+
+  <hr />
+
+  <!-- Cocktails -->
+  <section class="category">
+    <h3>🍤 Formules de Cocktails</h3>
+
+    <p>
+      Une carte est disponible : vous pouvez choisir vos bouchées <strong>à la pièce</strong>  
+      ou opter pour des <strong>formules complètes</strong>.
+    </p>
+
+    <p>
+      Une fois votre sélection faite, je vous contacte pour préciser :  
+      — le temps de préparation,  
+      — le matériel à prévoir (verrines, plateaux…),  
+      — et l’organisation du jour J.
+    </p>
+
+    <p>
+      La liste de courses vous est envoyée avant mon passage, et je viens cuisiner
+      <strong>directement à votre domicile</strong>.
+    </p>
+  </section>
+
+</section>

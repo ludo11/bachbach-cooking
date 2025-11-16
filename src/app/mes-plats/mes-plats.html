@@ -1,24 +1,24 @@
- <div class="chek">
+<div class="plats-container">
+  <div class="chek">
     <label>
-    <input type="checkbox" [checked]="filtreSansViande()" (change)="onToggleFiltre($event)" />
-    Afficher uniquement les plats sans viande  
+      <input type="checkbox" [checked]="filtreSansViande()" (change)="onToggleFiltre($event)" />
+      Afficher uniquement les plats sans viande
     </label>
-</div>
-<div class="plats-wrapper">
-  @for (type of typeKeys; track type) {
-    <section class="plats-section">
-      <h2>{{ type }}</h2>
-      <table>
-        <thead>
-          <tr><th>Nom</th></tr>
-        </thead>
-        <!-- Ajout de la classe scrollable-tbody pour appliquer le scroll si + de 10 plats -->
-        <tbody class="scrollable-tbody">
-          @for (plat of platsGroupes()[type]; track plat) {
-            <tr><td>{{ plat.nom }}</td></tr>
-          }
-        </tbody>
-      </table>
-    </section>
-  }
+  </div>
+
+  <div class="plats-wrapper">
+    @for (type of typeKeys; track type) {
+      <section class="plats-section">
+        <h2>{{ type }}</h2>
+        <table>  
+          <thead></thead>
+          <tbody class="scrollable-tbody">
+            @for (plat of platsGroupes()[type]; track plat) {
+              <tr><td>{{ plat.nom }}</td></tr>
+            }
+          </tbody>
+        </table>
+      </section>
+    }
+  </div>
 </div>

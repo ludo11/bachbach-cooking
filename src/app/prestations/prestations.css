@@ -1,4 +1,4 @@
-.page-wrapper-presta {
+/* .page-wrapper-presta {
   display: flex;
   align-items: center;
   padding: 2rem;
@@ -23,12 +23,12 @@
   border-radius: 1rem;
   overflow: hidden;
   width: 600px;
-  height: 500px; /* ✅ fixe une hauteur identique */
+  height: 500px; 
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
   transition: transform 0.3s ease;
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* assure que le footer est en bas */
+  justify-content: space-between; 
 
 }
 
@@ -50,24 +50,24 @@
 .card img {
   width: 100%;
   height: 300px;
-  /* object-fit: cover; */
+ 
 }
 
 .card-content {
   padding: 1rem;
   flex: 1;
-  overflow-y: auto; /* ✅ scroll si le contenu dépasse */
+  overflow-y: auto; 
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  overflow: hidden; /* évite les débordements */
+  overflow: hidden; 
 
 }
 .card-content h2 {
   margin: 0;
   font-size: 1.5rem;
   color: #1e6844;
-  flex-shrink: 0; /* ne se réduit jamais */
+  flex-shrink: 0;
 }
 
 .card-description-scrollable {
@@ -75,7 +75,7 @@
   overflow-y: auto;
   margin-top: 0.5rem;
   margin-bottom: 1rem;
-  padding-right: 0.5rem; /* optionnel, améliore scroll */
+  padding-right: 0.5rem; 
 }
 .card-footer {
   margin-top: auto;
@@ -111,7 +111,6 @@
         }
       }
 
-/* Tablettes */
 @media (max-width: 900px) {
   .card {
     width: 300px;
@@ -122,11 +121,10 @@
   }
 }
 
-/* Mobiles */
     @media (max-width: 600px) {
      .card {
     width: 90%;
-    height: 600px; /* même hauteur pour toutes */
+    height: 600px; 
   }
     .cards-container {
         gap: 1.5rem;
@@ -143,4 +141,101 @@
 }
 .underline{
     text-decoration: underline;
+} */
+/* Header avec logo */
+.presta-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1.5rem 1rem; /* moins de marge haut et bas */
+  background: linear-gradient(135deg, #e6f0ea, #ffffff);
+  text-align: center;
+}
+
+.presta-header h1 {
+  font-size: 1.8rem; /* taille réduite */
+  color: #1e6844;
+  font-weight: 700;
+  margin: 0.5rem 0; /* marge top/bottom réduite */
+}
+
+
+.logo-container {
+  margin-bottom: 1rem;
+}
+
+.logo {
+  max-width: 180px;
+  height: auto;
+  animation: float 3s ease-in-out infinite;
+}
+
+
+/* Cartes */
+.page-wrapper-presta {
+  padding: 3rem 2rem;
+  display: flex;
+  justify-content: center;
+  background: #f9f9f9;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2.5rem;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2rem;
+  transition: all 0.4s ease;
+  transform: translateY(0);
+}
+
+.card:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.18);
+}
+
+.card-content h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #1e6844;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price {
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: #1e6844;
+}
+
+.reservation-link {
+  background-color: #1e6844;
+  color: #fff;
+  padding: 0.9rem 1.6rem;
+  border-radius: 12px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.reservation-link:hover {
+  background-color: #145135;
+  transform: trans
 }

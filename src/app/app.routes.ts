@@ -10,11 +10,13 @@ import { EnCoursDeConstruction } from './en-cours-de-construction/en-cours-de-co
 import { QuiSuisJe } from './qui-suis-je/qui-suis-je';
 import { Avis } from './avis/avis';
 import { MesPlats } from './mes-plats/mes-plats';
+import { Accueil } from './accueil/accueil';
 
 
 export const routes: Routes = [
 
-    { path: '', component: Home }, // route d'accueil
+    { path: '', component: Accueil }, // route d'accueil
+    { path: 'home', component: Home },
     { path: 'prestations', component: Prestations },
     { path: 'reservation', component: Reservation },
     { path: 'contact', component: Contact },
